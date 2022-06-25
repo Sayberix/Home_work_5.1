@@ -3,3 +3,13 @@
 // Блок ввода начального значения
 Console.WriteLine("Введите число:");
 int number = Convert.ToInt32(Console.ReadLine());
+
+// Выполнение условий
+if (number % 2 == 0)
+{
+    Console.WriteLine("Введеное число " + number + " является четным!");
+}
+else
+{
+    Console.WriteLine("Введеное число " + number + " - нечетное!");
+}
