@@ -1,12 +1,7 @@
-﻿// Программа, которая принимает на вход трёхзначное число и на выходе показывает последнюю цифру этого числа.
+﻿// Программа, которая на вход принимает два числа и выдаёт, какое число большее, а какое меньшее.
 
-Console.WriteLine("Введите трехзначное число:");
-int number = Convert.ToInt32(Console.ReadLine());
-if (number/100 > 1 && number/100 < 10)
-{
-    
-}
-else
-{
-    Console.WriteLine("Ошибка! Введено не трехзначное число!")
-}
+
+Console.WriteLine("Введите первое число:");
+int number_1 = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Введите второе число:");
+int number_2 = Convert.ToInt32(Console.ReadLine());
