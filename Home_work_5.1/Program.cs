@@ -2,11 +2,11 @@
 
 Console.WriteLine("Введите трехзначное число:");
 int number = Convert.ToInt32(Console.ReadLine());
-if (number/100 > 1 && number/100 < 10)
+if (number/100 > 1 && number/100 < 10)  // Условия для проверки числа на трехзначность
 {
-    
+    Console.Write("Последнее число в заданом значении: " + (number%10));
 }
 else
 {
-    Console.WriteLine("Ошибка! Введено не трехзначное число!")
+    Console.WriteLine("Ошибка! Введено не трехзначное число!");
 }
