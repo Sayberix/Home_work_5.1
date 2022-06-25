@@ -1,34 +1,15 @@
-﻿// Программа, которая принимает на вход три числа и выдаёт максимальное из этих чисел.
+﻿// Программа, которая на вход принимает число и выдаёт, является ли число чётным (делится ли оно на два без остатка).
 
-// Блок ввода сравниваемых значений
-Console.WriteLine("Введите первое число:");
-int number_1 = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("Введите второе число:");
-int number_2 = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("Введите третье число:");
-int number_3 = Convert.ToInt32(Console.ReadLine());
+// Блок ввода начального значения
+Console.WriteLine("Введите число:");
+int number = Convert.ToInt32(Console.ReadLine());
 
 // Выполнение условий
-if(number_1 != number_2 && number_1 != number_3 && number_2 != number_3) // Проверка на корректность ввода сравниваемыхх значений!
+if (number % 2 == 0)
 {
-    if(number_1 > number_2 && number_1 > number_3)
-    {
-        Console.WriteLine("Первое введеное число больше! Число " + number_1 + " больше чем число " + number_2 + " и число " + number_3 + " !");
-    }
-    else
-    {
-        if(number_2 > number_3)
-        {
-            Console.WriteLine("Второе введеное число больше! Число: " + number_2 + " больше чем число " + number_1 + " и число " + number_3 + " !");
-        }
-        else
-        {
-            Console.WriteLine("Третье введеное число больше! Число: " + number_3 + " больше чем число " + number_1 + " и число " + number_2 + " !");
-        }
-        
-    }
+    Console.WriteLine("Введеное число " + number + " является четным!");
 }
 else
 {
-    Console.WriteLine("Присутствуют одинаковые числа!");
+    Console.WriteLine("Введеное число " + number + " - нечетное!");
 }
